@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="init.js"></script>
+	</head>
+	<body>
+		Hello, this is index! <br/>		
+		<div class="request">
+			<fieldset>
+				<legend>Request</legend>
+				<div>1. URL: <input id="url" type="text" /></div>
+				<div id="url_ex">Ex: https://adxsync-dev.andrexen.com:4443/import <button id="use_url_ex_btn">Use Example</button></div>
+				<div>2. Method: <select id="method">
+					  <option value="POST">POST</option>
+					  <option value="GET">GET</option>
+					</select></div>
+				<div id="content_type">3. content-type: application/json</div>
+				<div>4. Data:<textarea rows="4" cols="50" id="data"></textarea></div>
+				<div>5. <button id="send_btn">Send</button></div>
+			</fieldset>
+		</div>
+		<div class="response">
+			<fieldset>
+				<legend>Response</legend>
+				<textarea rows="10" cols="100" id="result">
+					....
+				</textarea>
+			</fieldset>
+		</div>
+		
+	</body>
+</html>
